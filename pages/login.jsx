@@ -4,6 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
 import { useRouter } from "next/router";
+import InputField from '../components/InputField.jsx';
 
 const Login = () => {
   const [name, setName] = useState("");
@@ -77,10 +78,10 @@ const Login = () => {
               {login ? (
                 ""
               ) : (
-                <input
+                <InputField
                   type="text"
                   placeholder="Enter your name..."
-                  className=" outline-none border my-3 border-black px-3 py-1 w-96 h-10"
+                  className="outline-none border my-3 border-black px-3 py-1 w-96 h-10"
                   onChange={(e) => setName(e.target.value)}
                 />
               )}
