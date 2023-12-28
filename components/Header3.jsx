@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import InputField from './InputField.jsx';
 
 const Header3 = () => {
   const [city, setCity] = useState(" ");
@@ -13,7 +14,7 @@ const Header3 = () => {
           Over 157,000 hotels and homes across 35 countries
         </h2>
         <div className="flex justify-center my-5 mx-20 ">
-          <input
+          <InputField
             type="text"
             placeholder="Search..."
             className=" w-6/12  h-16 outline-none px-3 text-lg border-r-2 border-gray-400 "
